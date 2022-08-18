@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[7],{5:function(e,t){var n=document.querySelectorAll(".techno-slider__list_item"),l=document.querySelector(".techno-show-all__button");l.addEventListener("click",(function(e){for(var t=5;t<n.length;t++){var o=n[t];"none"===o.style.display?(o.style.display="flex",l.classList.add("open-all"),l.textContent="Скрыть"):(o.style.display="none",l.textContent="Показать все",l.classList.remove("open-all"))}}))}}]);
+//# sourceMappingURL=7.bundle.js.map

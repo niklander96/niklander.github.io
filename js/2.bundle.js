@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[2],{4:function(e,n){var t=document.querySelectorAll(".brands-slider__list_item_hidden"),l=document.querySelector(".brands-show-all__button");l.addEventListener("click",(function(){for(var e=0;e<t.length;e++){var n=t[e];"none"===n.style.display?(n.style.display="flex",l.classList.add("open-all"),l.textContent="Скрыть"):(n.style.display="none",l.textContent="Показать все",l.classList.remove("open-all"))}}))}}]);
+//# sourceMappingURL=2.bundle.js.map

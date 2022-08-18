@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[3],{6:function(e,n){var r=document.querySelector(".upper-menu__button_burger"),u=document.querySelector(".burger-menu__button_burgerX");document.querySelector(".land");r.addEventListener("click",(function(e){e.preventDefault(),burgerMenu.classList.add("burger-menu-show"),land.classList.add("land_blur"),u.addEventListener("click",(function(e){e.preventDefault(),burgerMenu.classList.remove("burger-menu-show"),land.classList.remove("land_blur")}))}))}}]);
+//# sourceMappingURL=3.bundle.js.map
