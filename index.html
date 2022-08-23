@@ -11,54 +11,55 @@
 <link href="style.css" rel="stylesheet"></head>
 
 <body>
+  <div class="blur"></div>
+  
+  <div class="feedback">
+    <div class="feedback-cross">
+      <button class="feedback-cross__button"></button>
+    </div>
+    <header class="feedback-title">
+      <h1 class="feedback-title_text">Обратная связь</h1>
+    </header>
+    <main class="feedback-forms">
+      <label><input type="text" id="name" name="name" placeholder="Имя" class="forms"></label>
+      <label><input type="tel" id="tel_feedback" name="tel" placeholder="Телефон" class="forms"></label>
+      <label><input type="email" id="email" name="email" placeholder="Электронная почта" class="forms"></label>
+      <label><textarea name="comment" id="comment-field" rows="5" placeholder="Сообщение" class="forms"></textarea></label>
+      <div class="feedback-text">
+        <p>Нажимая “отправить”, вы даете согласие на <span class="feedback-text_pink">обработку персональных
+            данных</span>
+          и
+          соглашаетесь с нашей <span class="feedback-text_pink">политикой конфиденциальности</span></p>
+      </div>
+      <div class="feedback-submit">
+        <input class="submit-button" type="submit" value="ОТПРАВИТЬ">
+      </div>
+    </main>
+  </div>
+  
+  <div class="call">
+    <div class="call-cross">
+      <button class="call-cross__button"></button>
+    </div>
+    <header class="call-title">
+      <h1 class="call-title_text">Заказать звонок</h1>
+    </header>
+    <main class="call-forms">
+      <label><input type="tel" id="tel_call" name="tel" placeholder="Телефон" class="forms"></label>
+      <div class="call-text">
+        <p>Нажимая “отправить”, вы даете согласие на <span class="call-text_pink">обработку персональных данных</span>
+          и
+          соглашаетесь с нашей <span class="call-text_pink">политикой конфиденциальности</span></p>
+      </div>
+      <div class="call-submit">
+        <input class="submit-button" type="submit" value="ОТПРАВИТЬ">
+      </div>
+    </main>
+  </div>
   <div class="page">
     
-    <div class="feedback">
-      <div class="feedback-cross">
-        <button class="feedback-cross__button"></button>
-      </div>
-      <header class="feedback-title">
-        <h1 class="feedback-title_text">Обратная связь</h1>
-      </header>
-      <main class="feedback-forms">
-        <label><input type="text" id="name" name="name" placeholder="Имя" class="forms"></label>
-        <label><input type="tel" id="tel_feedback" name="tel" placeholder="Телефон" class="forms"></label>
-        <label><input type="email" id="email" name="email" placeholder="Электронная почта" class="forms"></label>
-        <label><textarea name="comment" id="comment-field" rows="5" placeholder="Сообщение" class="forms"></textarea></label>
-        <div class="feedback-text">
-          <p>Нажимая “отправить”, вы даете согласие на <span class="feedback-text_pink">обработку персональных
-              данных</span>
-            и
-            соглашаетесь с нашей <span class="feedback-text_pink">политикой конфиденциальности</span></p>
-        </div>
-        <div class="feedback-submit">
-          <input class="submit-button" type="submit" value="ОТПРАВИТЬ">
-        </div>
-      </main>
-    </div>
-    
-    <div class="call">
-      <div class="call-cross">
-        <button class="call-cross__button"></button>
-      </div>
-      <header class="call-title">
-        <h1 class="call-title_text">Заказать звонок</h1>
-      </header>
-      <main class="call-forms">
-        <label><input type="tel" id="tel_call" name="tel" placeholder="Телефон" class="forms"></label>
-        <div class="call-text">
-          <p>Нажимая “отправить”, вы даете согласие на <span class="call-text_pink">обработку персональных данных</span>
-            и
-            соглашаетесь с нашей <span class="call-text_pink">политикой конфиденциальности</span></p>
-        </div>
-        <div class="call-submit">
-          <input class="submit-button" type="submit" value="ОТПРАВИТЬ">
-        </div>
-      </main>
-    </div>
-    
     <div class="burger-menu">
-      <header class="burger-header">
+      <div class="burger-header">
         <div class="burger-menu_left">
           <button class="burger-menu__button_burgerX buttons" type="button"></button>
           <a class="burger-menu__button_logo buttons" href="#"></a>
@@ -66,8 +67,8 @@
         <div class="burger-menu_right">
           <button class="burger-menu__button_search buttons"></button>
         </div>
-      </header>
-      <main class="burger-main">
+      </div>
+      <div class="burger-main">
         <nav class="main-menu_column">
           <ul class="main-menu__list">
             <li class="main-menu__list_items"><a href="#">Ремонт техники</a></li>
@@ -80,39 +81,40 @@
             <li class="main-menu__list_items"><a href="#">Контакты</a></li>
           </ul>
         </nav>
-      </main>
+      </div>
       <footer class="burger-footer">
         <div class="lower-menu">
-          <button class="lower-menu__button_call buttons"><a href="src/index-modal-call.html"></a></button>
-          <button class="lower-menu__button_chat buttons"><a href="src/index-modal-feedback.html"></a></button>
-          <button class="lower-menu__button_profile buttons"></button>
+          <a class="lower-menu__button_call buttons" href="#"></a>
+          <a class="lower-menu__button_chat buttons" href="#"></a>
+          <a class="lower-menu__button_profile buttons" href="#"></a>
         </div>
         <a class="mail" href="mailto:mail@cps.com">mail@cps.com</a>
         <a class="tel" href="tel:+88008908900">8 800 890 8900</a>
         <div class="lang">
           <ul class="lang__select">
-            <li class="ru" value="/ru/">RU</li>
-            <li class="en" value="/en/">EN</li>
-            <li class="ch" value="/ch/">CH</li>
+            <li class="ru">RU</li>
+            <li class="en">EN</li>
+            <li class="ch">CH</li>
           </ul>
         </div>
       </footer>
     </div>
+
     
     <div class="land">
       
       <div class="center">
         <header class="upper-menu">
           <div class="upper-menu_left">
-            <button class="upper-menu__button_burger buttons"><a href="index1.html"></a></button>
+            <a class="upper-menu__button_burger buttons" href="#"></a>
             <span class="upper-menu__divider_first"></span>
-            <button class="upper-menu__button_logo buttons"><a href="#"></a></button>
+            <a class="upper-menu__button_logo buttons" href="#"></a>
           </div>
           <div class="upper-menu_right">
             <div class="upper-menu_right_help">
-              <button class="upper-menu__button_call buttons"><a href="index-modal-call.html"></a></button>
-              <button class="upper-menu__button_chat buttons"><a href="index-modal-feedback.html"></a></button>
-              <button class="upper-menu__button_profile buttons"></button>
+              <a class="upper-menu__button_call buttons" href="#"></a>
+              <a class="upper-menu__button_chat buttons" href="#"></a>
+              <a class="upper-menu__button_profile buttons" href="#"></a>
             </div>
             <span class="upper-menu__divider_second"></span>
             <button class="upper-menu__button_repair buttons"></button>
@@ -237,79 +239,79 @@
             </ul>
             <ul class="price-slider__list swiper-wrapper">
               <li class="price-slider__list_item swiper-slide">
-                <table>
-                  <tbody class="price-cards">
-                    <tr class="price-cards__rows">
-                      <th class="price-cards__head">Ремонтные услуги</th>
-                      <td class="price-cards__description">Диагностика</td>
-                      <th class="price-cards__head">Цена</th>
-                      <td class="price-cards__description">Бесплатно</td>
-                      <th class="price-cards__head">Срок</th>
-                      <td class="price-cards__description">30 мин</td>
-                      <td class="price-cards__description"><a class="order" href="#">ЗАКАЗАТЬ</a></td>
-                    </tr>
-                  </tbody>
-                </table>
+
+                <div class="price-cards">
+                  <div class="price-cards__rows">
+                    <div class="price-cards__head">Ремонтные услуги</div>
+                    <div class="price-cards__description">Диагностика</div>
+                    <div class="price-cards__head">Цена</div>
+                    <div class="price-cards__description">Бесплатно</div>
+                    <div class="price-cards__head">Срок</div>
+                    <div class="price-cards__description">30 мин</div>
+                    <div class="price-cards__description"><a class="order" href="#">ЗАКАЗАТЬ</a></div>
+                  </div>
+                </div>
+
               </li>
               <li class="price-slider__list_item swiper-slide">
-                <table>
-                  <tbody class="price-cards">
-                    <tr class="price-cards__rows">
-                      <th class="price-cards__head">Ремонтные услуги</th>
-                      <td class="price-cards__description">Замена дисплея</td>
-                      <th class="price-cards__head">Цена</th>
-                      <td class="price-cards__description">1000 &#x20bd</td>
-                      <th class="price-cards__head">Срок</th>
-                      <td class="price-cards__description">30-120 мин</td>
-                      <td class="price-cards__description"><a class="order" href="#">ЗАКАЗАТЬ</a></td>
-                    </tr>
-                  </tbody>
-                </table>
+
+                <div class="price-cards">
+                  <div class="price-cards__rows">
+                    <div class="price-cards__head">Ремонтные услуги</div>
+                    <div class="price-cards__description">Замена дисплея</div>
+                    <div class="price-cards__head">Цена</div>
+                    <div class="price-cards__description">1000 &#x20bd</div>
+                    <div class="price-cards__head">Срок</div>
+                    <div class="price-cards__description">30-120 мин</div>
+                    <div class="price-cards__description"><a class="order" href="#">ЗАКАЗАТЬ</a></div>
+                  </div>
+                </div>
+
               </li>
               <li class="price-slider__list_item swiper-slide">
-                <table>
-                  <tbody class="price-cards">
-                    <tr class="price-cards__rows">
-                      <th class="price-cards__head">Ремонтные услуги</th>
-                      <td class="price-cards__description">Замена полифонического динамика</td>
-                      <th class="price-cards__head">Цена</th>
-                      <td class="price-cards__description">1000 &#x20bd</td>
-                      <th class="price-cards__head">Срок</th>
-                      <td class="price-cards__description">30-120 мин</td>
-                      <td class="price-cards__description"><a class="order" href="#">ЗАКАЗАТЬ</a></td>
-                    </tr>
-                  </tbody>
-                </table>
+
+                <div class="price-cards">
+                  <div class="price-cards__rows">
+                    <div class="price-cards__head">Ремонтные услуги</div>
+                    <div class="price-cards__description">Замена полифонического динамика</div>
+                    <div class="price-cards__head">Цена</div>
+                    <div class="price-cards__description">1000 &#x20bd</div>
+                    <div class="price-cards__head">Срок</div>
+                    <div class="price-cards__description">30-120 мин</div>
+                    <div class="price-cards__description"><a class="order" href="#">ЗАКАЗАТЬ</a></div>
+                  </div>
+                </div>
+
               </li>
               <li class="price-slider__list_item swiper-slide">
-                <table>
-                  <tbody class="price-cards">
-                    <tr class="price-cards__rows">
-                      <th class="price-cards__head">Ремонтные услуги</th>
-                      <td class="price-cards__description">Тестирование с выдачей технического заключения</td>
-                      <th class="price-cards__head">Цена</th>
-                      <td class="price-cards__description">1000 &#x20bd</td>
-                      <th class="price-cards__head">Срок</th>
-                      <td class="price-cards__description">30-120 мин</td>
-                      <td class="price-cards__description"><a class="order" href="#">ЗАКАЗАТЬ</a></td>
-                    </tr>
-                  </tbody>
-                </table>
+
+                <div class="price-cards">
+                  <div class="price-cards__rows">
+                    <div class="price-cards__head">Ремонтные услуги</div>
+                    <div class="price-cards__description">Тестирование с выдачей технического заключения</div>
+                    <div class="price-cards__head">Цена</div>
+                    <div class="price-cards__description">1000 &#x20bd</div>
+                    <div class="price-cards__head">Срок</div>
+                    <div class="price-cards__description">30-120 мин</div>
+                    <div class="price-cards__description"><a class="order" href="#">ЗАКАЗАТЬ</a></div>
+                  </div>
+                </div>
+
               </li>
               <li class="price-slider__list_item swiper-slide">
-                <table>
-                  <tbody class="price-cards">
-                    <tr class="price-cards__rows">
-                      <th class="price-cards__head">Ремонтные услуги</th>
-                      <td class="price-cards__description">Замена программного обеспечения</td>
-                      <th class="price-cards__head">Цена</th>
-                      <td class="price-cards__description">1000 &#x20bd</td>
-                      <th class="price-cards__head">Срок</th>
-                      <td class="price-cards__description">30-120 мин</td>
-                      <td class="price-cards__description"><a class="order" href="#">ЗАКАЗАТЬ</a></td>
-                    </tr>
-                  </tbody>
-                </table>
+
+                <div class="price-cards">
+                  <div class="price-cards__rows">
+                    <div class="price-cards__head">Ремонтные услуги</div>
+                    <div class="price-cards__description">Замена программного обеспечения</div>
+                    <div class="price-cards__head">Цена</div>
+                    <div class="price-cards__description">1000 &#x20bd</div>
+                    <div class="price-cards__head">Срок</div>
+                    <div class="price-cards__description">30-120 мин</div>
+                    <div class="price-cards__description"><a class="order" href="#">ЗАКАЗАТЬ</a></div>
+                  </div>
+                </div>
+
               </li>
             </ul>
             <div class="swiper-pagination"></div>
